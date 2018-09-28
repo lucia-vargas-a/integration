@@ -1,6 +1,3 @@
-import os
-import io
-
 def mapper(lines):
 	key = None
 	newKey = None
