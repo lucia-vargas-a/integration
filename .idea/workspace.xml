@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd463f78-ae2e-4b19-8239-4a86990245cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/mapper_example.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/integration.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/integration.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/filtering.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/reducer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/topten.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/mapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/mapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/mapper_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/mapper_example.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,50 +19,47 @@
     <session id="2072636572">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="4" />
+          <entry key="py" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="4" />
+          <entry key="Python" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="3" />
+          <entry key="dummy" value="2" />
+          <entry key="py" value="3113" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="3" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="3113" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/mapper.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/mapper_example.py">
+        <entry file="file://$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/topten.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+            <state relative-caret-position="190">
+              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+              <folding>
+                <element signature="e#225#235#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,21 +73,31 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sys</find>
+      <find>lines</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/mapper.py" />
         <option value="$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/mapper_example.py" />
+        <option value="$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/recuder.py" />
+        <option value="$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/mapper.py" />
+        <option value="$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/reducer.py" />
+        <option value="$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/filtering.py" />
+        <option value="$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/topten.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="17" />
-    <option name="y" value="63" />
-    <option name="width" value="1400" />
+    <option name="x" value="4" />
+    <option name="y" value="23" />
+    <option name="width" value="1250" />
     <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -136,7 +146,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mapper (1)">
+  <component name="RunManager" selected="Python.topten">
+    <configuration name="filtering" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="integration" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/filtering.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="mapper (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="integration" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -158,19 +189,61 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mapper" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="mapper_example" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="integration" />
-      <option name="INTERPRETER_OPTIONS" value="python3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/integration/Intro_to_hadoop_and_map_reduce" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/integration/Intro_to_hadoop_and_map_reduce/mapper.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/mapper_example.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="reducer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="integration" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/reducer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="topten" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="integration" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/topten.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -180,13 +253,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.mapper" />
       <item itemvalue="Python.mapper (1)" />
+      <item itemvalue="Python.mapper_example" />
+      <item itemvalue="Python.reducer" />
+      <item itemvalue="Python.filtering" />
+      <item itemvalue="Python.topten" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.topten" />
+        <item itemvalue="Python.filtering" />
+        <item itemvalue="Python.reducer" />
         <item itemvalue="Python.mapper (1)" />
-        <item itemvalue="Python.mapper" />
+        <item itemvalue="Python.mapper_example" />
       </list>
     </recent_temporary>
   </component>
@@ -204,15 +283,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="17" y="63" width="1400" height="788" extended-state="0" />
+    <frame x="4" y="23" width="1250" height="788" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2569956" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29387417" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32902297" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3275862" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4992636" weight="0.3994253" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -240,26 +319,78 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/reducer.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/mapper.py</url>
-          <line>23</line>
-          <option name="timeStamp" value="5" />
+          <line>7</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/integration/Intro_to_hadoop_and_map_reduce/mapper.py" />
-    <entry file="file://$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/mapper.py">
+    <entry file="file://$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/mapper_example.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="165">
+          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/mapper_example.py">
+    <entry file="file://$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/reducer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <marker date="1538237014000" expanded="true" signature="207:436" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/mapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding>
+            <marker date="1538236510000" expanded="true" signature="27:29" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/filtering.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-142">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="323" selection-start-line="323" selection-end-line="323" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intro_to_hadoop_and_map_reduce/python/topten.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <folding>
+            <element signature="e#225#235#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

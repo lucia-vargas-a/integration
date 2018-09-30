@@ -1,28 +1,12 @@
-def mapper(lines):
-	key = None
-	newKey = None
-	newValue = 0
-	value = 0
-	details = None
+import sys
 
-	for line in sys.stdin:
-		data = line.strip().split("\t")
+class Mapper():
 
-		if data.lenght != 3:
-			print("wrong input: %s",data)
-		else:
-			newkey,newvalue,details = data
-			print (data)
-
-			if 	key == newKey:
-				value = value+newValue
-			else:
-				print (key,value)
-				key = newKey
-
-	def main():
-		lines = """Lucia\t20\t"Bella"\t"""
-		mapper(lines)
-
-
-
+	def mapper_city(): #self, lines):
+		clean_data = []
+		for line in inputs:
+			data = line.strip().split("\t")
+			if len(data) != 6:
+				continue
+			clean_data += data[3], data[4]
+		return clean_data
